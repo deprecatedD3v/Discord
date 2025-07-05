@@ -1,32 +1,50 @@
-# Discord Bot Sample Project
+# Discord Bot
 
-A complete sample Discord bot built with Python and discord.py, featuring modular cogs, admin/moderation, fun commands, and event handling.
+A Discord bot built with discord.py featuring role management and moderation tools.
 
 ## Features
-- Modular cog structure (general, admin, fun, events)
-- Command cooldowns and error handling
-- Moderation: kick, ban, mute, clear, unban
-- Fun: 8ball, roll dice, coinflip, jokes
-- Utility: ping, info, userinfo, help
-- Welcome/goodbye messages
-- Logging to file and console
+
+- **Role Management System**: Interactive role categories with emojis
+- **Moderation Tools**: Kick, ban, mute, and clear commands
+- **Fun Commands**: 8ball, dice rolling, coin flip, and jokes
+- **General Utilities**: Ping, user info, and bot statistics
+
+## Role Categories
+
+1. **🎮 Tuar Studios Games**
+   - 📰 News
+   - 🧪 Tester
+
+2. **💻 Platforms**
+   - 🖥️ PC
+   - 🎮 Console
+   - 📱 Mobile
+
+3. **🌍 Regions**
+   - 🇪🇺 EU
+   - 🇺🇸 NA East
+   - 🇺🇸 NA West
+   - 🇦🇺 Oceania
+   - 🌏 Asia
+   - 🇿🇦 South Africa
+   - 🇧🇷 South America
 
 ## Setup
 
-1. **Clone the repository**
+1. Install dependencies: `pip install -r requirements.txt`
+2. Configure your bot token in `config.py`
+3. Run the bot: `python bot.py`
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+## Commands
 
-3. **Create a `.env` file**
-   - Copy `env_example.txt` to `.env` and fill in your Discord bot token and settings.
+- `!help` - Show all available commands
+- `!roles` - Manage your roles
+- `!createroles` - Create all role categories (admin only)
+- `!deleteroles` - Delete all bot-created roles (admin only)
 
-4. **Run the bot**
-   ```bash
-   python bot.py
-   ```
+## Git Integration
+
+This project is connected to GitHub and can be deployed directly to VPS for real-time updates.
 
 ## Environment Variables
 See `env_example.txt` for required variables:
