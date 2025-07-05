@@ -50,7 +50,9 @@ class General(commands.Cog):
             "`!kick <user> [reason]` - Kick a user",
             "`!ban <user> [reason]` - Ban a user",
             "`!clear <amount>` - Clear messages",
-            "`!mute <user> <duration>` - Mute a user"
+            "`!mute <user> <duration>` - Mute a user",
+            "`!createroles` - Create all role categories",
+            "`!deleteroles` - Delete all bot-created roles"
         ]
         
         # Fun commands
@@ -59,6 +61,11 @@ class General(commands.Cog):
             "`!roll [dice]` - Roll dice",
             "`!coinflip` - Flip a coin",
             "`!joke` - Get a random joke"
+        ]
+        
+        # Role commands
+        role_commands = [
+            "`!roles` - Show role categories and manage roles"
         ]
         
         embed.add_field(
@@ -74,6 +81,12 @@ class General(commands.Cog):
         embed.add_field(
             name="🎮 Fun Commands",
             value="\n".join(fun_commands),
+            inline=False
+        )
+        
+        embed.add_field(
+            name="🎭 Role Commands",
+            value="\n".join(role_commands),
             inline=False
         )
         

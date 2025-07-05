@@ -8,10 +8,9 @@ class Config:
     """Configuration class for the Discord bot."""
     
     # Discord Bot Token
-    DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
-    
+    DISCORD_TOKEN = 'yourtokeMTM4MTQ1NzQ3MzU3MDg2NTI3NA.GEOen4.Zt2N_zMyvgn-p6quaaYpI4ZqxaEH5UHhSiyJAU'
     # Guild ID (optional, for guild-specific commands)
-    DISCORD_GUILD_ID = os.getenv('DISCORD_GUILD_ID')
+    DISCORD_GUILD_ID = '1380991263800557648'
     
     # Bot Settings
     BOT_PREFIX = os.getenv('BOT_PREFIX', '!')

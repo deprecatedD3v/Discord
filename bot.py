@@ -35,7 +35,8 @@ class DiscordBot(commands.Bot):
             'cogs.general',
             'cogs.admin',
             'cogs.fun',
-            'cogs.events'
+            'cogs.events',
+            'cogs.roles'
         ]
     
     async def setup_hook(self):
